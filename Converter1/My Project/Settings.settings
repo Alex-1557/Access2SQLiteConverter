@@ -1,0 +1,83 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Jet" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=G:\Projects\ATI\Access\RtgNtDat.accdb&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=G:\Projects\ATI\Access\RtgNtDat.accdb</Value>
+    </Setting>
+    <Setting Name="ACE" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\Projects\ATI\Access\RtgNtDat.accdb;Persist Security Info=False;&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=G:\Projects\ATI\Access\RtgNtDat.accdb;Persist Security Info=False;</Value>
+    </Setting>
+    <Setting Name="CalibSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select  `Name`,`Source`,`SampleTargets`,`SampleValues`,`Coeffs`,`ZeroSample`,`NewZeroSample`,`InfinitySample`,`NewInfinitySample`,`Description`,`MaxNormPrcnt`,`MinNormPrcnt`,`SampleTime`,`LastRezero` from `calibdata`;</Value>
+    </Setting>
+    <Setting Name="CardSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `Name`,`Address `,`CardModel`,`CardSetup`,`MasterCard` from `carddata`;</Value>
+    </Setting>
+    <Setting Name="ControlSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `RecipeName`,`CtrlName`,`CtrlSignal`,`CtrlNumber`,`CtrlLogic`,`Description`,`CtrlType`,`DigOutput`,`GaugeOutput` from `controldata`;</Value>
+    </Setting>
+    <Setting Name="CoreSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `Name`,`DataType`,`Initialize`,`Save` from `coredata`;</Value>
+    </Setting>
+    <Setting Name="GaugeSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `ID`,`GaugeName`,`Description`,`GaugeType`,`IsotopeType`,`GaugeOn`,`ProfileGauge`,`StripWidth`,`NomLineSpeed`,`ScanSpeed`,`ScanMode`,`Calibration`,`SPC`,`RecipeName`,`Recipe ID`,`Multiplier`,`Compensation`,`Filter`,`UpdateRate`,`StatLength`,`SetPoint`,`SigFormat`,`WarningEnable`,`WarningLow`,`WarningHigh`,`AlarmEnable`,`AlarmLow`,`AlarmHigh`,`ActiveFilter`,`Recording`,`ExceptReport`,`Reporting`,`PrintGraph`,`DistModeDivider`,`RecordingRate`,`Seperation`,`StripLength`,`AOLow`,`AOHigh`,`AOLow1`,`AOHigh1`,`AOLow2`,`AOHigh2`,`AOLow3`,`AOHigh3`,`Input1`,`Input2`,`Input3`,`Input4`,`Input5`,`Input6`,`Input7`,`Input8`,`Input9`,`Output1`,`Output2`,`Output3`,`Output4`,`Output5`,`Output6`,`Output7`,`Output8`,`Output9`,`CDPulsePerUnit`,`LeftMargin`,`LeftTrim`,`RightTrim`,`RightMargin`,`FixedPosition`,`NumOfSteps`,`TravSpeed`,`RetSpeed`,`MotorNumber`,`CDOffset`,`K_Prop`,`K_Integr`,`K_Deriv`,`FFMaxLineSpeed`,`FFMinLineSpeed`,`MAFilterN`,`LimitPlus`,`LimitMinus`,`ZoningEnable`,`ZoneABeg`,`ZoneAEnd`,`ZoneBBeg`,`ZoneBEnd`,`Zone1Beg`,`Zone1End`,`Zone2Beg`,`Zone2End`,`Zone3Beg`,`Zone3End`,`Zone4Beg`,`Zone4End`,`Zone5Beg`,`Zone5End`,`Zone6Beg`,`Zone6End`,`Zone7Beg`,`Zone7End`,`Zone8Beg`,`Zone8End`,`Zone9Beg`,`Zone9End`,`Zone10Beg`,`Zone10End`,`Zone11Beg`,`Zone11End`,`Zone12Beg`,`Zone12End`,`DIO1`,`DIO2`,`DIO3`,`DIO4`,`DIO5`,`DIO6`,`DIO7`,`DIO8`,`DIO9`,`DIO10`,`DIO11`,`DIO12`,`RecordIfWarnLow`,`CountsCorrOn` from `gaugedata`;</Value>
+    </Setting>
+    <Setting Name="RecipeSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `ID`,`Name`,`GaugeName`,`RecipeName`,`Description` from `recipedata`;</Value>
+    </Setting>
+    <Setting Name="SignalSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `SignalDelay`,`RecipeName`,`SignalName`,`SignalNumber`,`SignalLogic`,`InputType0`,`InputName0`,`InputLogic0`,`InputType1`,`InputName1`,`InputLogic1`,`InputType2`,`InputName2`,`InputLogic2`,`InputType3`,`InputName3`,`InputLogic3`,`InputType4`,`InputName4`,`InputLogic4`,`InputType5`,`InputName5`,`InputLogic5`,`InputType6`,`InputName6`,`InputLogic6`,`InputType7`,`InputName7`,`InputLogic7` from `signaldata`;</Value>
+    </Setting>
+    <Setting Name="SpcSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `Name`,`RecipeName`,`Source`,`Interval`,`StatSample`,`CpkHigh`,`CpkLow`,`XbarEnable`,`XbarMean`,`XbarUCL`,`XbarLCL`,`RbarEnable`,`RbarMean`,`RbarUCL`,`RbarLCL`,`ProdSpecEnable`,`ProdSpecUSL`,`ProdSpecLSL`,`ActiveFilterComp` from `spcdata`;</Value>
+    </Setting>
+    <Setting Name="ViewSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">select `RecipeName`,`GraphCaption`,`Style`,`WinNo`,`GaugeName`,`SetPoint`,`BackColor`,`BorderColor`,`Left`,`Top`,`Width`,`Height`,`GphRng`,`GphRngInc`,`SetPtInc`,`DataPnts`,`DataColorOn`,`DataType`,`DataColor`,`AlarmColor`,`WarningColor`,`NormalColor`,`LineWidth`,`FontSize`,`ShowAlarmLine`,`ShowWarnLine`,`Xunits`,`Yunits`,`ProfileStyle`,`LastNAveraged`,`Profile` from `viewdata`;</Value>
+    </Setting>
+    <Setting Name="SQLite" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=H:\Tmp\Out.db;Version=3;</Value>
+    </Setting>
+    <Setting Name="CalibInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `calibdata` (`Name`,`Source`,`SampleTargets`,`SampleValues`,`Coeffs`,`ZeroSample`,`NewZeroSample`,`InfinitySample`,`NewInfinitySample`,`Description`,`MaxNormPrcnt`,`MinNormPrcnt`,`SampleTime`,`LastRezero`) VALUES </Value>
+    </Setting>
+    <Setting Name="CardInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `carddata` (`Name`,`Address`,`CardModel`,`CardSetup`,`MasterCard`) VALUES </Value>
+    </Setting>
+    <Setting Name="ControlInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `controldata` (`RecipeName`,`CtrlName`,`CtrlSignal`,`CtrlNumber`,`CtrlLogic`,`Description`,`CtrlType`,`DigOutput`,`GaugeOutput`) VALUES </Value>
+    </Setting>
+    <Setting Name="CoreInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `coredata` (`Name`,`DataType`,`Initialize`,`Save`) VALUES </Value>
+    </Setting>
+    <Setting Name="GaugeInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `gaugedata` (`ID`,`GaugeName`,`Description`,`GaugeType`,`IsotopeType`,`GaugeOn`,`ProfileGauge`,`StripWidth`,`NomLineSpeed`,`ScanSpeed`,`ScanMode`,`Calibration`,`SPC`,`RecipeName`,`Recipe ID`,`Multiplier`,`Compensation`,`Filter`,`UpdateRate`,`StatLength`,`SetPoint`,`SigFormat`,`WarningEnable`,`WarningLow`,`WarningHigh`,`AlarmEnable`,`AlarmLow`,`AlarmHigh`,`ActiveFilter`,`Recording`,`ExceptReport`,`Reporting`,`PrintGraph`,`DistModeDivider`,`RecordingRate`,`Seperation`,`StripLength`,`AOLow`,`AOHigh`,`AOLow1`,`AOHigh1`,`AOLow2`,`AOHigh2`,`AOLow3`,`AOHigh3`,`Input1`,`Input2`,`Input3`,`Input4`,`Input5`,`Input6`,`Input7`,`Input8`,`Input9`,`Output1`,`Output2`,`Output3`,`Output4`,`Output5`,`Output6`,`Output7`,`Output8`,`Output9`,`CDPulsePerUnit`,`LeftMargin`,`LeftTrim`,`RightTrim`,`RightMargin`,`FixedPosition`,`NumOfSteps`,`TravSpeed`,`RetSpeed`,`MotorNumber`,`CDOffset`,`K_Prop`,`K_Integr`,`K_Deriv`,`FFMaxLineSpeed`,`FFMinLineSpeed`,`MAFilterN`,`LimitPlus`,`LimitMinus`,`ZoningEnable`,`ZoneABeg`,`ZoneAEnd`,`ZoneBBeg`,`ZoneBEnd`,`Zone1Beg`,  `Zone1End`,`Zone2Beg`,`Zone2End`,`Zone3Beg`,`Zone3End`,`Zone4Beg`,`Zone4End`,`Zone5Beg`,`Zone5End`,`Zone6Beg`,`Zone6End`,`Zone7Beg`,`Zone7End`,`Zone8Beg`,`Zone8End`,`Zone9Beg`,`Zone9End`,`Zone10Beg`,`Zone10End`,`Zone11Beg`,`Zone11End`,`Zone12Beg`,`Zone12End`,`DIO1`,`DIO2`,`DIO3`,`DIO4`,`DIO5`,`DIO6`,`DIO7`,`DIO8`,`DIO9`,`DIO10`,`DIO11`,`DIO12`,`RecordIfWarnLow`,`CountsCorrOn`) VALUES </Value>
+    </Setting>
+    <Setting Name="RecipeInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `recipedata` (`ID`,`Name`,`GaugeName`,`RecipeName`,`Description`) VALUES </Value>
+    </Setting>
+    <Setting Name="SignalInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `signaldata` (`SignalDelay`,`RecipeName`,`SignalName`,`SignalNumber`,`SignalLogic`,`InputType0`,`InputName0`,`InputLogic0`,`InputType1`,`InputName1`,`InputLogic1`,`InputType2`,`InputName2`,`InputLogic2`,`InputType3`,`InputName3`,`InputLogic3`,`InputType4`,`InputName4`,`InputLogic4`,`InputType5`,`InputName5`,`InputLogic5`,`InputType6`,`InputName6`,`InputLogic6`,`InputType7`,`InputName7`,`InputLogic7`) VALUES </Value>
+    </Setting>
+    <Setting Name="SpcInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `spcdata` (`Name`,`RecipeName`,`Source`,`Interval`,`StatSample`,`CpkHigh`,`CpkLow`,`XbarEnable`,`XbarMean`,`XbarUCL`,`XbarLCL`,`RbarEnable`,`RbarMean`,`RbarUCL`,`RbarLCL`,`ProdSpecEnable`,`ProdSpecUSL`,`ProdSpecLSL`,`ActiveFilterComp`) VALUES </Value>
+    </Setting>
+    <Setting Name="ViewInsert" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">INSERT INTO `viewdata` (`RecipeName`,`GraphCaption`,`Style`,`WinNo`,`GaugeName`,`SetPoint`,`BackColor`,`BorderColor`,`Left`,`Top`,`Width`,`Height`,`GphRng`,`GphRngInc`,`SetPtInc`,`DataPnts`,`DataColorOn`,`DataType`,`DataColor`,`AlarmColor`,`WarningColor`,`NormalColor`,`LineWidth`,`FontSize`,`ShowAlarmLine`,`ShowWarnLine`,`Xunits`,`Yunits`,`ProfileStyle`,`LastNAveraged`,`Profile`) VALUES </Value>
+    </Setting>
+    <Setting Name="PrivSQL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SELECT `LastName`,`FirstName`,`UserName`,`PassWord`,`ChangeModes`,`RcpEdit`,`ggEdit`,`gphChange`,`ExitApp`,`StartApp`,`Calib`,`PCTimeMod`,`Prnt`,`PicPath`,`Picture`,`MeasModeChange`,`IOCardEdit`,`ShellToDos`,`EditUsers`,`AdvGGEdit`,`CalEdit`,`AdvRcpEdit`,`SmartGauge`,`StorePassword` FROM `PRIV`</Value>
+    </Setting>
+    <Setting Name="PrivInsert" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO `priv` (`LastName`,`FirstName`,`UserName`,`PassWord`,`ChangeModes`,`RcpEdit`,`ggEdit`,`gphChange`,`ExitApp`,`StartApp`,`Calib`,`PCTimeMod`,`Prnt`,`PicPath`,`Picture`,`MeasModeChange`,`IOCardEdit`,`ShellToDos`,`EditUsers`,`AdvGGEdit`,`CalEdit`,`AdvRcpEdit`,`SmartGauge`,`StorePassword`) VALUES </Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

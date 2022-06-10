@@ -1,0 +1,12 @@
+G:\Projects\ATI\Access\Converter1\Converter1\bin\Debug\Converter1.exe.config
+G:\Projects\ATI\Access\Converter1\Converter1\bin\Debug\Converter1.exe
+G:\Projects\ATI\Access\Converter1\Converter1\bin\Debug\Converter1.pdb
+G:\Projects\ATI\Access\Converter1\Converter1\bin\Debug\Converter1.xml
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.vbproj.AssemblyReference.cache
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.vbproj.SuggestedBindingRedirects.cache
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.Resources.resources
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.vbproj.GenerateResource.cache
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.vbproj.CoreCompileInputs.cache
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.exe
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.xml
+G:\Projects\ATI\Access\Converter1\Converter1\obj\Debug\Converter1.pdb
